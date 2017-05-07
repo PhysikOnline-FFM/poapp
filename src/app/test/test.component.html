@@ -1,0 +1,96 @@
+<div class="margin">
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-js-ripple-effect">
+    <i class="material-icons">add</i>
+  </button>
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+    Button
+  </button>
+  <!-- Accent-colored raised button -->
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+    Button
+  </button>
+</div>
+<div class="margin">
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" (click)="clicked = !clicked">
+    Click me
+  </button>
+</div>
+<div class="margin" *ngIf="clicked">
+  <div class="margin">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
+      Button
+    </button>
+  </div>
+  <div class="margin">
+    <button class="mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">mood</i>
+    </button>
+  </div>
+  <div class="margin">
+    <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+  </div>
+  <div class="margin">
+    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+      <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+      <span class="mdl-checkbox__label">Checkbox</span>
+    </label>
+  </div>
+  <div class="margin">
+    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+      <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+      <span class="mdl-switch__label"></span>
+    </label>
+  </div>
+  <div class="margin">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="sample3" [(ngModel)]="text">
+        <label class="mdl-textfield__label" for="sample3">Text...</label>
+      </div>
+  </div>
+  <div class="margin">
+    {{text}}
+  </div>
+  <div class="margin">
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+      <thead>
+      <tr>
+        <th class="mdl-data-table__cell--non-numeric">Material</th>
+        <th>Quantity</th>
+        <th>Unit price</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+        <td>25</td>
+        <td>$2.90</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+        <td>50</td>
+        <td>$1.25</td>
+      </tr>
+      <tr>
+        <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+        <td>10</td>
+        <td>$2.35</td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="margin">
+    <button id="demo-menu-lower-left"
+            class="mdl-button mdl-js-button mdl-button--icon">
+      <i class="material-icons">more_vert</i>
+    </button>
+
+    <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+        for="demo-menu-lower-left">
+      <li class="mdl-menu__item">Some Action</li>
+      <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
+      <li disabled class="mdl-menu__item">Disabled Action</li>
+      <li class="mdl-menu__item">Yet Another Action</li>
+    </ul>
+  </div>
+</div>
