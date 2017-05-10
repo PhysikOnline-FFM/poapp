@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "../node_modules/material-design-lite/src/material-design-lite.scss"
+        "../node_modules/material-design-lite/material.min.css"
       ],
       "scripts": [
         "../node_modules/material-design-lite/material.min.js"
