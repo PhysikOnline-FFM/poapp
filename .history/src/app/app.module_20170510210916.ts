@@ -12,14 +12,14 @@ import { PageNotFoundComponent } from './pagenotfound/pagenotfound.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent,
-    PageNotFoundComponent
+    TestComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    PageNotFoundComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
