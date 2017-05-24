@@ -23,14 +23,14 @@
 
     <span fxFlex></span>
 
-    <button fxHide="true" fxHide.gt-sm="false" md-button class="fullscreen-toggle" (click)="toggleFullscreen()">
+    <button fxHide="true" fxHide.gt-sm="false" md-button class="fullscreen-toggle">
       <md-icon *ngIf="!isFullscreen">fullscreen</md-icon>
       <md-icon *ngIf="isFullscreen">fullscreen_exit</md-icon>
     </button>
 
     <!--<ms-search></ms-search>-->
 
-    <button class="user-button" md-button [mdMenuTriggerFor]="menu">
+    <button class="user-button" md-button>
       <div fxLayout="row" fxLayoutAlign="start center">
         <img src="assets/img/avatars/noavatar.png" class="avatar-flex"/>
         <span fxHide="true" fxHide.gt-sm="false" style="font-weight: 500; margin-left: 5px;">David Smith</span>
@@ -58,7 +58,7 @@
         <span>Help</span>
       </button>
       <md-divider></md-divider>
-      <button [routerLink]="['/login']" md-menu-item>
+      <button md-menu-item>
         <md-icon>exit_to_app</md-icon>
         <span>Logout</span>
       </button>
@@ -66,7 +66,7 @@
   </md-toolbar>
 
   <div class="main-container" #scrollContainer>
-    <router-outlet (activate)="onActivate($event, scrollContainer)"></router-outlet>
+    <router-outlet></router-outlet>
   </div>
 
 </md-sidenav-container>
