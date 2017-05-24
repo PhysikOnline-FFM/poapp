@@ -1,0 +1,19 @@
+#pagenotfound{
+    background-color: #000;
+    height: 100%;
+}
+
+p {color: blue;
+    font-size:189%;
+}
+
+
+img {
+    position: relative;
+    top: 13%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 896px;
+    /*margin: 0 0 0 -458px;*/
+}
