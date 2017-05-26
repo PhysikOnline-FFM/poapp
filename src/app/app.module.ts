@@ -12,6 +12,7 @@ import { Pagenotfound2Component } from './pagenotfound2/pagenotfound2.component'
 import { Pagenotfound3Component } from './pagenotfound3/pagenotfound3.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
     Pagenotfound2Component,
     Pagenotfound3Component,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,7 @@ import { HomeComponent } from './home/home.component';
     MaterialModule,
     FlexLayoutModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

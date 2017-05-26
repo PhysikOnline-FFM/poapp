@@ -1,38 +1,16 @@
-<md-sidenav-container>
-
-  <md-sidenav class="quickpanel" align="end" mode="over" #quickpanel>
-
-    <!--<ms-quickpanel></ms-quickpanel>-->
-
+<md-toolbar color="primary">
+  <button md-icon-button (click)="sidenav.open()"><md-icon>menu</md-icon></button>
+</md-toolbar>
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    <app-sidenav></app-sidenav>
   </md-sidenav>
 
-  <md-toolbar class="main-toolbar mat-elevation-z2">
-    <div fxHide="false" fxHide.gt-sm>
-    </div>
-
-    <md-menu class="user-menu" x-position="before" y-position="below" #menu="mdMenu">
-      <button md-menu-item>
-        <md-icon>account_circle</md-icon>
-        <span>Profile</span>
-      </button>
-      <button md-menu-item>
-        <md-icon>settings</md-icon>
-        <span>Settings</span>
-      </button>
-      <button md-menu-item>
-        <md-icon>help</md-icon>
-        <span>Help</span>
-      </button>
-      <md-divider></md-divider>
-      <button md-menu-item>
-        <md-icon>exit_to_app</md-icon>
-        <span>Logout</span>
-      </button>
-    </md-menu>
-  </md-toolbar>
-
-  <div class="main-container" #scrollContainer>
-    <router-outlet></router-outlet>
-  </div>
+  <!--<div class="example-sidenav-content">
+    <button md-button (click)="sidenav.open()">
+      <md-icon>menu</md-icon>
+    </button>
+  </div>-->
 
 </md-sidenav-container>
+<router-outlet></router-outlet>

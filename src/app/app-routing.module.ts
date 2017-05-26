@@ -9,26 +9,30 @@ import { Pagenotfound3Component } from './pagenotfound3/pagenotfound3.component'
 
 const routes: Routes = [
   {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
     path: '',
     component: HeaderComponent,
     children: [
       {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'pagenotfound2',
-        component: Pagenotfound2Component
-      },
-      {
-        path: 'pagenotfound3',
-        component: Pagenotfound3Component
-      },
-      {
-        path: '**',
+        path: 'pagenotfound',
         component: PagenotfoundComponent
       }
     ]
+  }, 
+  {
+    path: 'pagenotfound2',
+    component: Pagenotfound2Component
+  },
+  {
+    path: 'pagenotfound3',
+    component: Pagenotfound3Component
+  },
+  {
+    path: '**',
+    component: PagenotfoundComponent
   }
 ];
 

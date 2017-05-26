@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MdSidenavModule } from '@angular/material';
+import {MdIconRegistry} from '@angular/material';
 
 @Component({
   selector: 'app-header',
