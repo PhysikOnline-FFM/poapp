@@ -7,9 +7,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AppComponent } from './app.component';
 import { RoutingModule } from "./app-routing.module";
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { Pagenotfound0Component } from './pagenotfound0/pagenotfound0.component';
+import { Pagenotfound1Component } from './pagenotfound1/pagenotfound1.component';
 import { Pagenotfound2Component } from './pagenotfound2/pagenotfound2.component';
-import { Pagenotfound3Component } from './pagenotfound3/pagenotfound3.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -17,9 +17,9 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PagenotfoundComponent,
+    Pagenotfound0Component,
+    Pagenotfound1Component,
     Pagenotfound2Component,
-    Pagenotfound3Component,
     HeaderComponent,
     HomeComponent,
     SidenavComponent

@@ -3,9 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { Pagenotfound0Component } from './pagenotfound0/pagenotfound0.component';
+import { Pagenotfound1Component } from './pagenotfound1/pagenotfound1.component';
 import { Pagenotfound2Component } from './pagenotfound2/pagenotfound2.component';
-import { Pagenotfound3Component } from './pagenotfound3/pagenotfound3.component';
+
 
 const routes: Routes = [
   {
@@ -18,21 +19,21 @@ const routes: Routes = [
     children: [
       {
         path: 'pagenotfound',
-        component: PagenotfoundComponent
+        component: Pagenotfound0Component
       }
     ]
   }, 
   {
-    path: 'pagenotfound2',
-    component: Pagenotfound2Component
+    path: 'pagenotfound0',
+    component: Pagenotfound0Component
   },
   {
-    path: 'pagenotfound3',
-    component: Pagenotfound3Component
+    path: 'pagenotfound1',
+    component: Pagenotfound1Component
   },
   {
     path: '**',
-    component: PagenotfoundComponent
+    component: Pagenotfound2Component
   }
 ];
 
