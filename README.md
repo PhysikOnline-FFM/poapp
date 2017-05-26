@@ -3,17 +3,6 @@
 
 [![Build Status][travis-badge]][travis-badge-url]
 
-## Watch versions of important packages we use
-[![npm version](https://badge.fury.io/js/%40angular%2Fcli.svg)](https://badge.fury.io/js/%40angular%2Fcli)
-
-[![npm version](https://badge.fury.io/js/%40angular%2Fmaterial.svg)](https://badge.fury.io/js/%40angular%2Fmaterial)
-
-[![npm version](https://badge.fury.io/js/%40angular%2Fflex-layout.svg)](https://badge.fury.io/js/%40angular%2Fflex-layout)
-
-[![npm version](https://badge.fury.io/js/hammerjs.svg)](https://badge.fury.io/js/hammerjs)
-
-[![npm version](https://badge.fury.io/js/normalize.css.svg)](https://badge.fury.io/js/normalize.css)
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
 
 ## Development server
