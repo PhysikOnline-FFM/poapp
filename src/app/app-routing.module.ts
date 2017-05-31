@@ -3,38 +3,25 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
-import { Pagenotfound0Component } from './pagenotfound0/pagenotfound0.component';
-import { Pagenotfound1Component } from './pagenotfound1/pagenotfound1.component';
-import { Pagenotfound2Component } from './pagenotfound2/pagenotfound2.component';
-
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+// import { Pagenotfound2Component } from './pagenotfound2/pagenotfound2.component';
+// import { Pagenotfound3Component } from './pagenotfound3/pagenotfound3.component';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    component: HomeComponent
-  },
   {
     path: '',
     component: HeaderComponent,
     children: [
       {
-        path: 'pagenotfound',
-        component: Pagenotfound0Component
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: '**',
+        component: PagenotfoundComponent
       }
     ]
   }, 
-  {
-    path: 'pagenotfound0',
-    component: Pagenotfound0Component
-  },
-  {
-    path: 'pagenotfound1',
-    component: Pagenotfound1Component
-  },
-  {
-    path: '**',
-    component: Pagenotfound2Component
-  }
 ];
 
 @NgModule({

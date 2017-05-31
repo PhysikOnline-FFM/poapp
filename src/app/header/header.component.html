@@ -1,16 +1,15 @@
-<!-- Sets the sidenav-container used for the sidenav to scroll over -->
-<md-sidenav-container class="example-container">
-
-  <!-- Displays the app-header with the app primary color -->
-  <md-toolbar color="primary" class="mat-elevation-z4">
-    <button md-icon-button (click)="sidenav.open()"><md-icon>menu</md-icon></button>
-  </md-toolbar>
-
-  <!-- Includes the app-sidenav being toggled the md-icon above -->
-  <md-sidenav #sidenav class="example-sidenav">
+<md-sidenav-container>
+  <md-sidenav mode="push" #sidenav>
     <app-sidenav></app-sidenav>
   </md-sidenav>
 
-  <!-- Loads routing related content -->
-  <router-outlet></router-outlet>
+  <md-toolbar color="primary">
+    <button md-icon-button (click)="sidenav.open()">
+      <md-icon>menu</md-icon>
+    </button>
+  </md-toolbar>
+
+  <div class="main-container">  
+    <router-outlet class="main-content"></router-outlet>
+  </div>
 </md-sidenav-container>

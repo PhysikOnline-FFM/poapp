@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pagenotfound',
-  templateUrl: './pagenotfound1.component.html',
+  templateUrl: './pagenotfound.component.html',
   styleUrls: ['./pagenotfound1.component.scss']
 })
-export class Pagenotfound1Component implements OnInit {
+export class PagenotfoundComponent implements OnInit {
 
+  pagenotfound = Math.floor(Math.random() * (4.9-1)+1);
+  
   constructor() { }
 
   ngOnInit() {
