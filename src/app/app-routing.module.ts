@@ -4,8 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { Pagenotfound2Component } from './pagenotfound2/pagenotfound2.component';
-import { Pagenotfound3Component } from './pagenotfound3/pagenotfound3.component';
+// import { Pagenotfound2Component } from './pagenotfound2/pagenotfound2.component';
+// import { Pagenotfound3Component } from './pagenotfound3/pagenotfound3.component';
 
 const routes: Routes = [
   {
@@ -17,23 +17,21 @@ const routes: Routes = [
     component: HeaderComponent,
     children: [
       {
-        path: 'pagenotfound',
+        path: '',
         component: PagenotfoundComponent
       }
     ]
   }, 
-  {
-    path: 'pagenotfound2',
-    component: Pagenotfound2Component
-  },
-  {
-    path: 'pagenotfound3',
-    component: Pagenotfound3Component
-  },
-  {
-    path: '**',
-    component: PagenotfoundComponent
-  }
+    {
+    path: '',
+    component: HeaderComponent,
+    children: [
+      {
+        path: '**',
+        component: PagenotfoundComponent
+      }
+    ]
+  }, 
 ];
 
 @NgModule({
