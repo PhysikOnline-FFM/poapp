@@ -1,15 +1,15 @@
-<md-toolbar color="primary">
-  <button md-icon-button (click)="sidenav.open()"><md-icon>menu</md-icon></button>
-</md-toolbar>
-<md-sidenav-container class="example-container">
-  <md-sidenav #sidenav class="example-sidenav">
+<md-sidenav-container>
+  <md-sidenav mode="push" #sidenav>
     <app-sidenav></app-sidenav>
   </md-sidenav>
 
-  <!--<div class="example-sidenav-content">
-    <button md-button (click)="sidenav.open()">
+  <md-toolbar color="primary">
+    <button md-icon-button (click)="sidenav.open()">
       <md-icon>menu</md-icon>
     </button>
-  </div>-->
-  <router-outlet></router-outlet>
+  </md-toolbar>
+
+  <div class="main-container">  
+    <router-outlet class="main-content"></router-outlet>
+  </div>
 </md-sidenav-container>

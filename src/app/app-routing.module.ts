@@ -9,23 +9,13 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
     path: '',
     component: HeaderComponent,
     children: [
       {
-        path: '',
-        component: PagenotfoundComponent
-      }
-    ]
-  }, 
-    {
-    path: '',
-    component: HeaderComponent,
-    children: [
+        path: 'home',
+        component: HomeComponent
+      },
       {
         path: '**',
         component: PagenotfoundComponent
