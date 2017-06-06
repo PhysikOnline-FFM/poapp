@@ -22,9 +22,7 @@
         "../node_modules/normalize.css/normalize.css",
         "styles.scss"
       ],
-      "scripts": [
-        "../node_modules/hammerjs/hammer.js"
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
