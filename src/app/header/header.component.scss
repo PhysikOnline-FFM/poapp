@@ -1,0 +1,15 @@
+md-sidenav-container{
+    height: 100%;
+    width: 100%;
+}
+
+md-sidenav {
+    width: 200px;
+}
+
+.main-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100% - 64px);
+  position: relative;
+}

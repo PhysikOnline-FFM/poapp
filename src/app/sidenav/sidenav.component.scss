@@ -1,0 +1,4 @@
+/* removing the outline of a list-item element if sidenav opens */
+a.mat-line:focus{
+    outline-style: none;
+}
