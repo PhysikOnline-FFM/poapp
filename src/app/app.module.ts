@@ -11,6 +11,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { HomeTestComponent } from './home-test/home-test.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     PagenotfoundComponent,
     HeaderComponent,
     HomeComponent,
-    SidenavComponent
+    SidenavComponent,
+    HomeTestComponent
   ],
   imports: [
     BrowserModule,
