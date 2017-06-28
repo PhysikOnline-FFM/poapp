@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeTestComponent } from './home-test/home-test.component';
+import { SkriptComponent} from './Skript/Skript.component';
 const routes: Routes = [
   {
     path: '',
@@ -15,9 +16,19 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'hometest',
-        component: HomeTestComponent
+        path: 'home',
+        component: HomeComponent
       },
+      {
+        path: 'hometest',
+        component: HomeTestComponent,
+      
+      },
+      {
+        path: 'Skript',
+        component: SkriptComponent
+      },
+    
       {
         path: '**',
         component: PagenotfoundComponent

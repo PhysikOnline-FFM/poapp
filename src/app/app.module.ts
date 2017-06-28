@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { ngMaterial } from 'angular-material-expansion-panel';
 
 import { AppComponent } from './app.component';
 import { RoutingModule } from "./app-routing.module";
@@ -12,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeTestComponent } from './home-test/home-test.component';
+import { SkriptComponent } from './Skript/Skript.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HomeTestComponent } from './home-test/home-test.component';
     HeaderComponent,
     HomeComponent,
     SidenavComponent,
-    HomeTestComponent
+    HomeTestComponent,
+    SkriptComponent,
+ 
   ],
   imports: [
     BrowserModule,
